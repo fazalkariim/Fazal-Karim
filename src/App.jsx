@@ -6,17 +6,19 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Hire from "./pages/Hire.jsx";
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-1">
-          <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/hire" element={<Hire />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

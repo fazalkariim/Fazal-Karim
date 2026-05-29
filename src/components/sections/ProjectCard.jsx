@@ -8,6 +8,7 @@ export const projectsData = [
     category: "NEXT Apps",
     status: "Completed",
     image: "/aiassis.png",
+     github: "https://github.com/fazalkariim/Smart-Recipe-Platform.ai",
   },
   {
     title: "Bookifyr",
@@ -16,6 +17,7 @@ export const projectsData = [
     category: "MERN Apps",
     status: "Completed",
     image: "/book.png",
+     github: "https://github.com/fazalkariim/Bookifyr-Event_Booking_Platform",
   },
   {
     title: "TynexaAi",
@@ -24,6 +26,7 @@ export const projectsData = [
     category: "MERN Apps",
     status: "Completed",
     image: "/chatbot.png",
+     github: "https://github.com/fazalkariim/Ai-Customer-Support-ChatBot",
   },
   {
     title: "Restaurant POS",
@@ -32,6 +35,7 @@ export const projectsData = [
     category: "MERN Apps",
     status: "In Progress",
     image: "/res.png",
+     github: "https://github.com/fazalkariim/Restaurant-POS",
   },
   {
     title: "Yoga Wellness Tracker",
@@ -40,6 +44,7 @@ export const projectsData = [
     category: "NEXT Apps",
     status: "Completed",
     image: "/yoga.png",
+     github: "https://github.com/fazalkariim/final-year-project",
   },
  
 ];
@@ -78,13 +83,15 @@ export function ProjectCard({ p }) {
 <div className="flex items-center justify-between pt-4 border-t border-border">
   
   <div className="flex items-center gap-4">
-    <a
-      href="#"
-      className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
-    >
-      <Github className="w-3.5 h-3.5" />
-      Code
-    </a>
+   <a
+  href={p.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+>
+  <Github className="w-3.5 h-3.5" />
+  Code
+</a>
 
     {/* <a
       href="#"
