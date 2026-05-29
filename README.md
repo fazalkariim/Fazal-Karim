@@ -1,76 +1,104 @@
-# Fazal Karim — MERN Portfolio (React + Vite + Tailwind)
+# 🚀 Fazal Karim Portfolio
 
-Standalone JavaScript port of the Lovable-designed portfolio. Dark, blue-accented, fully responsive multi-page UI.
+A modern and responsive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**.
 
-## Tech Stack
-- React 18 + Vite 5 (JavaScript, no TypeScript)
-- Tailwind CSS v4 (via `@tailwindcss/vite`)
-- React Router v6
-- lucide-react icons
-- tw-animate-css
+## 📖 About
 
-## Folder Structure
+This portfolio showcases my:
+
+* Professional experience
+* Featured projects
+* Technical skills
+* Education
+* Contact information
+
+Built with a clean UI, responsive layout, smooth animations, and modern design principles.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router DOM
+* Lucide React
+
+### Deployment
+
+* Vercel
+* Netlify
+* GitHub Pages
+
+---
+
+## ✨ Features
+
+* Fully Responsive Design
+* Modern Dark Theme
+* Animated Hero Section
+* Project Showcase
+* Skills Section
+* About Page
+* Contact Section
+* Smooth Navigation
+* Mobile Optimized UI
+
+---
+
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
 ```
-portfolio/
-├── index.html
-├── package.json
-├── vite.config.js
-├── src/
-│   ├── main.jsx              # React entry, mounts <App/> + BrowserRouter
-│   ├── App.jsx               # Routes (Home, About, Projects, 404)
-│   ├── styles.css            # Tailwind v4 + design tokens (oklch theme)
-│   ├── assets/
-│   │   └── hero-portrait.jpg
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── PageHeader.jsx
-│   │   ├── SectionHeader.jsx
-│   │   └── sections/
-│   │       ├── AboutPreview.jsx
-│   │       ├── Skills.jsx
-│   │       ├── Services.jsx
-│   │       ├── Process.jsx
-│   │       ├── Experience.jsx
-│   │       ├── FeaturedProjects.jsx
-│   │       ├── ProjectCard.jsx
-│   │       ├── Testimonials.jsx
-│   │       └── ContactCTA.jsx
-│   └── pages/
-│       ├── Home.jsx
-│       ├── About.jsx
-│       ├── Projects.jsx
-│       └── NotFound.jsx
+
+Move into the project folder:
+
+```bash
+cd portfolio
 ```
 
-## Installation
+Install dependencies:
+
 ```bash
 npm install
+```
+
+Run development server:
+
+```bash
 npm run dev
 ```
-Open http://localhost:5173
 
-## Build
+Build for production:
+
 ```bash
 npm run build
+```
+
+Preview production build:
+
+```bash
 npm run preview
 ```
 
-## Dependencies
-- react, react-dom, react-router-dom, lucide-react
-- vite, @vitejs/plugin-react, tailwindcss, @tailwindcss/vite, tw-animate-css
 
-## Environment Variables
-None required.
+## 👨‍💻 Author
 
-## Routing
-- `/` — Home (Hero + 8 sections)
-- `/about` — About page
-- `/projects` — Projects gallery with category filter
-- `*` — 404
+**Fazal Karim**
 
-## Customization
-- Colors / theme tokens: `src/styles.css` (`:root` block, all oklch).
-- Replace `src/assets/hero-portrait.jpg` with your own photo.
-- Edit data arrays inside each section component (skills, services, projects, testimonials, experience).
+MERN Stack Developer
+
+### Connect With Me
+
+* GitHub: https://github.com/fazalkariim
+* LinkedIn: https://www.linkedin.com/in/fazal-karim-462888276/
+* Instagram: https://www.instagram.com/fazall_karim/
+
+---
+

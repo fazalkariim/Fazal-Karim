@@ -1,5 +1,65 @@
+# dependencies
+
 node_modules
+
+# production
+
 dist
-.DS_Store
+build
+
+# logs
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# environment variables
+
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# editor files
+
+.vscode/
+.idea/
+
+# operating system files
+
+.DS_Store
+Thumbs.db
+
+# vite
+
+vite.config.timestamp-*
+
+# cache
+
+.cache
+.eslintcache
+
+# temporary files
+
+*.tmp
+*.temp
+
+# package manager
+
+.pnp
+.pnp.js
+
+# coverage
+
+coverage
+
+# lock files (optional)
+
+# package-lock.json
+
+# yarn.lock
+
+# pnpm-lock.yaml
