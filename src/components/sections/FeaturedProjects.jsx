@@ -1,0 +1,30 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { ProjectCard, projectsData } from "./ProjectCard.jsx";
+
+export function FeaturedProjects() {
+  return (
+    <section className="relative py-15 lg:py-15  bg-surface/30">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              <span className="w-1 h-1 rounded-full bg-primary" /> Featured Work
+            </div>
+            <h2 className="text-3xl md:text-5xl font-extralight tracking-tight">
+              Recent projects <span className="text-primary font-light">I'm proud of.</span>
+            </h2>
+          </div>
+          <Link to="/projects" className="inline-flex items-center gap-2 text-sm font-light text-muted-foreground hover:text-primary transition-colors group">
+            View all projects
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projectsData.slice(0, 3).map((p) => <ProjectCard key={p.title} p={p} />)}
+        </div>
+      </div>
+    </section>
+  );
+}
