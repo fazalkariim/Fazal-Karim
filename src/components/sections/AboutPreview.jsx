@@ -11,7 +11,6 @@ export function AboutPreview() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  ">
         <div className="relative">
           <div className="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl" />
-          {/* <div className="relative rounded-2xl overflow-hidden border border-border glow-border aspect-[4/5] max-w-md"> */}
             <img src={sideimg} alt="Fazal Karim" className="w-full h-full object-cover grayscale" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3">

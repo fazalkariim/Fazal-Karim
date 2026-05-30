@@ -7,10 +7,26 @@ import { CheckCircle2, Award, Coffee, Users, Zap, Heart } from "lucide-react";
 import sideimg from "@/assets/sidee.png";
 
 const strengths = [
-  { icon: Zap, title: "Fast Execution", desc: "Ship working software in days, not months." },
-  { icon: Heart, title: "Product Mindset", desc: "I care about your users as much as your code." },
-  { icon: CheckCircle2, title: "Reliable Delivery", desc: "Clear comms, honest timelines, no surprises." },
-  { icon: Users, title: "Team Player", desc: "Comfortable in async, remote, and hybrid teams." },
+  {
+    icon: Zap,
+    title: "Fast Execution",
+    desc: "Ship working software in days, not months.",
+  },
+  {
+    icon: Heart,
+    title: "Product Mindset",
+    desc: "I care about your users as much as your code.",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Reliable Delivery",
+    desc: "Clear comms, honest timelines, no surprises.",
+  },
+  {
+    icon: Users,
+    title: "Team Player",
+    desc: "Comfortable in async, remote, and hybrid teams.",
+  },
 ];
 
 const stats = [
@@ -35,26 +51,39 @@ export default function About() {
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden border border-border glow-border aspect-square max-w-md">
-              <img src={sideimg} alt="Fazal Karim portrait" className="w-full h-full object-cover grayscale" />
+              <img
+                src={sideimg}
+                alt="Fazal Karim portrait"
+                className="w-full h-full object-cover grayscale"
+              />
             </div>
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-extralight tracking-tight mb-6">
-              Hi, I'm <span className="text-primary font-light">Fazal Karim</span> — a full-stack developer based remotely.
+              Building{" "}
+              <span className="text-primary font-light">
+                modern digital products
+              </span>{" "}
+              that blend performance, scalability, and great user experiences.
             </h2>
+
             <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
               <p>
-                I started coding because I wanted to build things — small tools, tiny side projects, anything
-                that solved a problem I had. That curiosity grew into a career, and today I help startups
-                and product teams ship full-stack MERN applications that scale.
+                I'm a Full Stack Developer specializing in MERN Stack
+                applications, focused on transforming ideas into fast, scalable,
+                and production-ready solutions.
               </p>
+
               <p>
-                My focus is on writing maintainable code, designing thoughtful interfaces, and making sure
-                what we ship actually serves the people using it. I treat every project like it's my own.
+                From intuitive user interfaces to robust backend architectures,
+                I build applications that are designed to perform, scale, and
+                deliver real business value.
               </p>
+
               <p>
-                When I'm not coding, you'll find me reading about systems design, exploring new tools, or
-                tweaking my dev setup for the hundredth time.
+                Beyond coding, I'm constantly exploring new technologies,
+                refining development workflows, and staying current with modern
+                web engineering practices.
               </p>
             </div>
           </div>
@@ -67,10 +96,17 @@ export default function About() {
             {stats.map((s) => {
               const Icon = s.icon;
               return (
-                <div key={s.l} className="p-6 rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors text-center">
+                <div
+                  key={s.l}
+                  className="p-6 rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors text-center"
+                >
                   <Icon className="w-6 h-6 text-primary mx-auto mb-3" />
-                  <div className="text-3xl md:text-4xl font-extralight text-foreground">{s.n}</div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground mt-2">{s.l}</div>
+                  <div className="text-3xl md:text-4xl font-extralight text-foreground">
+                    {s.n}
+                  </div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground mt-2">
+                    {s.l}
+                  </div>
                 </div>
               );
             })}
@@ -96,12 +132,17 @@ export default function About() {
             {strengths.map((s) => {
               const Icon = s.icon;
               return (
-                <div key={s.title} className="p-7 rounded-2xl border border-border bg-card hover:border-primary/40 hover:-translate-y-1 transition-all">
+                <div
+                  key={s.title}
+                  className="p-7 rounded-2xl border border-border bg-card hover:border-primary/40 hover:-translate-y-1 transition-all"
+                >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center mb-5">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-medium mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                    {s.desc}
+                  </p>
                 </div>
               );
             })}

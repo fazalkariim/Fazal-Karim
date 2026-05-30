@@ -5,7 +5,6 @@ import { Services } from "../components/sections/Services.jsx";
 import { FeaturedProjects } from "../components/sections/FeaturedProjects.jsx";
 import { Process } from "../components/sections/Process.jsx";
 import { Experience } from "../components/sections/Experience.jsx";
-// import { Testimonials } from "../components/sections/Testimonials.jsx";
 import { ContactCTA } from "../components/sections/ContactCTA.jsx";
 
 export default function Home() {

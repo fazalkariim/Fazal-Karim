@@ -53,10 +53,14 @@ function Timeline({ items, icon: Icon, title }) {
         {items.map((item) => (
           <div key={item.role} className="relative">
             <div className="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-primary shadow-glow" />
-            <div className="text-[11px] uppercase tracking-[0.2em] text-primary mb-1">{item.period}</div>
+            <div className="text-[11px] uppercase tracking-[0.2em] text-primary mb-1">
+              {item.period}
+            </div>
             <h4 className="font-medium">{item.role}</h4>
             <div className="text-sm text-muted-foreground">{item.org}</div>
-            <p className="text-sm text-muted-foreground font-light mt-2 leading-relaxed">{item.desc}</p>
+            <p className="text-sm text-muted-foreground font-light mt-2 leading-relaxed">
+              {item.desc}
+            </p>
           </div>
         ))}
       </div>
@@ -68,7 +72,11 @@ export function Experience() {
   return (
     <section className="relative py-15 lg:py-15  bg-surface/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <SectionHeader eyebrow="Journey" title="Experience &" highlight="education." />
+        <SectionHeader
+          eyebrow="Journey"
+          title="Experience &"
+          highlight="education."
+        />
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <Timeline items={experience} icon={Briefcase} title="Experience" />
           <Timeline items={education} icon={GraduationCap} title="Education" />

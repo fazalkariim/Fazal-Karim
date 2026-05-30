@@ -17,17 +17,17 @@ export function ContactCTA() {
             </div>
 
             <h2 className="text-5xl md:text-6xl font-medium tracking-tight leading-tight">
-              Let's transform your vision  <br />
+              Let's transform your vision <br />
               <span className=" text-gradient-primary font-medium">
                 into reality.
               </span>
             </h2>
 
             <p className="mt-5 text-muted-foreground font-light max-w-xl mx-auto leading-relaxed">
-  Looking for a developer who can turn ideas into scalable digital
-  products? I'm available for freelance projects, startup collaborations,
-  and remote opportunities.
-</p>
+              Looking for a developer who can turn ideas into scalable digital
+              products? I'm available for freelance projects, startup
+              collaborations, and remote opportunities.
+            </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               {/* CONTACT BUTTON */}
@@ -35,9 +35,7 @@ export function ContactCTA() {
                 href="#contact"
                 onClick={() => {
                   setTimeout(() => {
-                    window.dispatchEvent(
-                      new Event("contact-highlight")
-                    );
+                    window.dispatchEvent(new Event("contact-highlight"));
                   }, 300);
                 }}
                 className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all"
@@ -48,13 +46,12 @@ export function ContactCTA() {
 
               {/* HIRE ME BUTTON */}
               <Link
-                 to="/hire"
-                 className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-border bg-surface font-medium hover:border-primary/50 transition-colors"
-               >
-                 <Briefcase className="w-4 h-4" />
-                 Hire Me
-               </Link>
-
+                to="/hire"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-border bg-surface font-medium hover:border-primary/50 transition-colors"
+              >
+                <Briefcase className="w-4 h-4" />
+                Hire Me
+              </Link>
             </div>
           </div>
         </div>
