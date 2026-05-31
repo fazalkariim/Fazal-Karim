@@ -46,7 +46,7 @@ export default function About() {
         description="A short story about who I am, how I work, and why I love building for the web."
       />
 
-      <section className="py-16 lg:py-20">
+      <section className=" lg:py-3">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-16 items-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
@@ -67,7 +67,7 @@ export default function About() {
               that blend performance, scalability, and great user experiences.
             </h2>
 
-            <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
+            <div className="space-y-3 text-muted-foreground font-light leading-relaxed">
               <p>
                 I'm a Full Stack Developer specializing in MERN Stack
                 applications, focused on transforming ideas into fast, scalable,
@@ -118,7 +118,7 @@ export default function About() {
       <Process />
       <Experience />
 
-      <section className="py-24 lg:py-32">
+      <section className="pb-13 lg:py-3 lg:mb-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-14 text-center mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">

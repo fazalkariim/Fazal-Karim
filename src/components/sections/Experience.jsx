@@ -70,7 +70,7 @@ function Timeline({ items, icon: Icon, title }) {
 
 export function Experience() {
   return (
-    <section className="relative py-15 lg:py-15  bg-surface/30">
+    <section className="relative py-15 lg:py-3 lg:pb-13  bg-surface/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeader
           eyebrow="Journey"

@@ -19,7 +19,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section className="relative bg-surface/30 py-15 lg:py-15 ">
+    <section className="relative bg-surface/30  pb-15 lg:pt-3 lg:pb-1">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeader
           eyebrow="Tech Stack"

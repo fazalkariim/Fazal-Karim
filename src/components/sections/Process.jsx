@@ -11,7 +11,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="relative py-15 lg:py-15 ">
+    <section className="relative py- lg:py-15 ">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeader eyebrow="How I Work" title="A clear process," highlight="from idea to launch." />
 

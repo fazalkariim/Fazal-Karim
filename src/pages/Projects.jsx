@@ -27,7 +27,7 @@ export default function Projects() {
       />
 
       {/* Featured */}
-      <section className="py-12">
+      <section className="">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="relative rounded-3xl border border-border bg-card overflow-hidden grid lg:grid-cols-2 gap-0">
             <div className={`relative h-[230px] sm:aspect-video lg:aspect-auto bg-gradient-to-br ${featured.accent}`}>

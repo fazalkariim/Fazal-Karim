@@ -8,12 +8,12 @@ import sideimg from "@/assets/sidee.png";
 export function AboutPreview() {
   return (
     <section className="relative py-15 lg:py-15 ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  ">
-        <div className="relative">
-          <div className="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl" />
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ">
+        <div className="relative ">
+          <div className="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl " />
             <img src={sideimg} alt="Fazal Karim" className="w-full h-full object-cover grayscale" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3">
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent " />
+            <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3 ">
               <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 grid place-items-center">
                 <Code2 className="w-5 h-5 text-primary" />
               </div>
@@ -25,14 +25,14 @@ export function AboutPreview() {
           {/* </div> */}
         </div>
 
-        <div>
+        <div >
           <SectionHeader
             eyebrow="About Me"
             title="Crafting digital products with"
             highlight="purpose & precision."
             align="left"
           />
-          <div className="space-y-5 text-muted-foreground font-light leading-relaxed">
+          <div className="space-y-5 text-muted-foreground font-light leading-relaxed ">
             <p>
               I'm Fazal — a full-stack developer focused on building fast, scalable, and beautifully crafted
               web applications using the MERN stack. I help startups, agencies, and product teams ship features
@@ -44,7 +44,7 @@ export function AboutPreview() {
             </p>
           </div>
 
-          <div className="mt-8 grid grid-cols-3 gap-6 py-6 border-y border-border">
+          <div className="mt-3 grid grid-cols-3 gap-6  border-y border-border ">
             {[
               { n: "7+", l: "Projects" },
               { n: "3+", l: "Clients" },
@@ -59,7 +59,7 @@ export function AboutPreview() {
 
           <Link
             to="/about"
-            className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all group"
+            className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all group"
           >
             <Sparkles className="w-4 h-4" />
             More About Me
