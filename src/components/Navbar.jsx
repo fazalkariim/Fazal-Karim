@@ -49,7 +49,7 @@ export function Navbar() {
         scrolled ? "glass border-b border-border/60" : "bg-transparent"
       }`}
     >
-      <nav className="w-full max-w-[1536px] mx-auto px-6 lg:px-12 xl:px-12 2xl:px-20 py-4 flex items-center justify-between">
+      <nav className="w-full max-w-[1680px] mx-auto px-6 lg:px-10 xl:px-12 2xl:px-16 py-4 flex items-center justify-between">
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-1 group">
           <img src={logoo} alt="logo" className="w-8 h-8 object-contain" />

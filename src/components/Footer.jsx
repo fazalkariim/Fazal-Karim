@@ -76,7 +76,7 @@ export function Footer() {
 
       <div className="  absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,119,255,0.12),transparent_45%)] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-8 border ">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-8 border "> //-----
         <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr] ">
           <div>
             <Link to="/" className="inline-flex items-center gap-1 group">

@@ -40,7 +40,7 @@ export function Hero() {
         }
       `}</style>
 
-      <div className="relative w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-5 2xl:px-20 ">
+<div className="relative w-full max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 2xl:px-16">
         {/* MOBILE HERO */}
         <div className="relative lg:hidden">
           <div className="relative z-10 flex flex-col items-center text-center mt-10">
