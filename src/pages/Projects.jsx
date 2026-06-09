@@ -5,6 +5,8 @@ import {
   projectsData,
 } from "../components/sections/ProjectCard.jsx";
 import { ContactCTA } from "../components/sections/ContactCTA.jsx";
+import { Experience } from "../components/sections/Experience.jsx";
+import { Skills } from "../components/sections/Skills.jsx";
 import { Sparkles } from "lucide-react";
 
 const categories = ["All", "MERN Apps", "NEXT Apps"];
@@ -99,7 +101,8 @@ export default function Projects() {
           </div>
         </div>
       </section>
-
+      <Skills />
+      <Experience />
       <ContactCTA />
     </>
   );

@@ -42,7 +42,7 @@ const education = [
 
 function Timeline({ items, icon: Icon, title }) {
   return (
-    <div>
+    <div >
       <div className="flex items-center gap-3 mb-8">
         <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 grid place-items-center">
           <Icon className="w-5 h-5 text-primary" />
@@ -70,7 +70,9 @@ function Timeline({ items, icon: Icon, title }) {
 
 export function Experience() {
   return (
-    <section className="relative py-15 lg:py-3 lg:pb-13  bg-surface/30">
+    <section 
+    id="experience"
+    className="relative py-15 lg:py-3 lg:pb-13  bg-surface/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeader
           eyebrow="Journey"

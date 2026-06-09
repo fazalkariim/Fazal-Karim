@@ -40,7 +40,7 @@ export function Hero() {
         }
       `}</style>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="relative w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-5 2xl:px-20 ">
         {/* MOBILE HERO */}
         <div className="relative lg:hidden">
           <div className="relative z-10 flex flex-col items-center text-center mt-10">
@@ -84,7 +84,7 @@ export function Hero() {
             <img
               src={logoo}
               alt="logo"
-              className="w-44 h-44 object-contain ml-16 mb-110"
+              className="w-44 h-44 object-contain ml-6 xl:ml-16 mb-110"
             />
 
             {/* NAME */}
@@ -108,7 +108,7 @@ export function Hero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="absolute right-10 top-36 z-49 hidden lg:block">
+          <div className="absolute right-0 xl:right-10 top-36 z-49 hidden lg:block">
             <div className="max-w-[420px] text-left">
               <p className="text-[35px] font-thin leading-[1.3] tracking-tight">
                 <span className="text-primary">Designing & developing</span>{" "}
