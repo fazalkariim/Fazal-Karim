@@ -40,7 +40,7 @@ export function Hero() {
         }
       `}</style>
 
-<div className="relative w-full max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 2xl:px-16">
+<div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 2xl:px-16">
         {/* MOBILE HERO */}
         <div className="relative lg:hidden">
           <div className="relative z-10 flex flex-col items-center text-center mt-10">
@@ -78,23 +78,20 @@ export function Hero() {
         </div>
 
         {/* DESKTOP HERO */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr] items-center gap-8 lg:gap-4">
-          {/* LEFT SIDE */}
-          <div className="relative">
-            <img
-              src={logoo}
-              alt="logo"
-              className="w-44 h-44 object-contain ml-6 xl:ml-16 mb-110"
-            />
+                <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr] items-center gap-8 lg:gap-4">
 
-            {/* NAME */}
-            <div className="absolute left-52 top-52 z-50">
-              <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold leading-[0.9] tracking-tight text-white">
-                Fazal <br />
-                <span className="pl-8 lg:pl-10">Karim</span>
-              </h1>
-            </div>
-          </div>
+          {/* LEFT SIDE */}
+         <div className="flex flex-col">
+                    <img
+                      src={logoo}
+                      alt="logo"
+                      className="w-44 h-44 object-contain ml-6 xl:ml-16"
+                    />
+                    <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold leading-[0.9] tracking-tight text-white ml-6 xl:ml-16 mt-4">
+                      Fazal <br />
+                      <span className="pl-8 lg:pl-10">Karim</span>
+                    </h1>
+                  </div>
 
           {/* CENTER IMAGE */}
           <div className="relative mx-auto -mt-12">
@@ -108,17 +105,16 @@ export function Hero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="absolute right-0 xl:right-10 top-36 z-49 hidden lg:block">
-            <div className="max-w-[420px] text-left">
+          <div className="flex flex-col items-end justify-center z-10">
+           <div className="max-w-[420px] text-left">
               <p className="text-[35px] font-thin leading-[1.3] tracking-tight">
                 <span className="text-primary">Designing & developing</span>{" "}
                 <span className="text-white">
-                  modern web solutions <br />
+                  modern web solutions <br /> 
                   that drive growth
                 </span>
               </p>
             </div>
-
             <img
               src={logoo}
               alt="logo"

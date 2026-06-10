@@ -49,16 +49,15 @@ export function Navbar() {
         scrolled ? "glass border-b border-border/60" : "bg-transparent"
       }`}
     >
-      <nav className="w-full max-w-[1680px] mx-auto px-6 lg:px-10 xl:px-12 2xl:px-16 py-4 flex items-center justify-between">
-        {/* LOGO */}
-        <Link to="/" className="flex items-center gap-1 group">
-          <img src={logoo} alt="logo" className="w-8 h-8 object-contain" />
-
-          <span className="text-xl font-light tracking-tight text-white">
-            F<span className="text-primary">a</span>zal K
-            <span className="text-primary">a</span>rim
-          </span>
-        </Link>
+       <nav className="w-full max-w-7xl mx-auto px-6 lg:px-10 xl:px-12 2xl:px-16 py-4 flex items-center justify-between">
+             {/* LOGO */}
+             <Link to="/" className="flex items-center gap-1 group">
+               <img src={logoo} alt="logo" className="w-8 h-8 object-contain" />
+               <span className="text-xl font-light tracking-tight text-white">
+                 F<span className="text-primary">a</span>zal K{" "}
+                 <span className="text-primary">a</span>rim
+               </span>
+             </Link>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-10">
