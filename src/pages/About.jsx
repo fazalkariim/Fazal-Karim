@@ -47,7 +47,7 @@ export default function About() {
       />
 
       <section className=" lg:py-3">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-16 items-center">
+        <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-20 grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-16 items-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden border border-border glow-border aspect-square max-w-md">
@@ -91,7 +91,7 @@ export default function About() {
       </section>
 
       <section className="py-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {stats.map((s) => {
               const Icon = s.icon;
@@ -119,7 +119,7 @@ export default function About() {
       <Experience />
 
       <section className="pb-13 lg:py-3 lg:mb-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-15 2xl:px-20">
           <div className="max-w-2xl mb-14 text-center mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
               <span className="w-1 h-1 rounded-full bg-primary" /> Why Me

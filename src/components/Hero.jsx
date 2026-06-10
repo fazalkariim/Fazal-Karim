@@ -94,7 +94,7 @@ export function Hero() {
           {/* RIGHT SIDE */}
           <div className="relative translate-y-1 xl:translate-y-2 xl:right-20 ">
             <div className="max-w-[420px] xl:max-w-[520px] text-left">
-              <p className="text-[35px] xl:text-[36px] 2xl:text-[38px] font-thin leading-[1.3] tracking-tight">
+              <p className="text-[35px] xl:text-[33px] 2xl:text-[37px] font-thin leading-[1.3] tracking-tight">
                 <span className="text-primary">Designing & developing</span>{" "}
                 <span className="text-white">
                   modern web solutions <br />

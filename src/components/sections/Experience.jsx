@@ -70,20 +70,22 @@ function Timeline({ items, icon: Icon, title }) {
 
 export function Experience() {
   return (
-    <section 
-    id="experience"
-    className="relative py-15 lg:py-3 lg:pb-13  bg-surface/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <SectionHeader
-          eyebrow="Journey"
-          title="Experience &"
-          highlight="education."
-        />
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-          <Timeline items={experience} icon={Briefcase} title="Experience" />
-          <Timeline items={education} icon={GraduationCap} title="Education" />
-        </div>
-      </div>
-    </section>
+   <section
+  id="experience"
+  className="relative py-15 lg:py-3 lg:pb-13 bg-surface/30"
+>
+  <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-15 2xl:px-20">
+    <SectionHeader
+      eyebrow="Journey"
+      title="Experience &"
+      highlight="education."
+    />
+
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-28">
+      <Timeline items={experience} icon={Briefcase} title="Experience" />
+      <Timeline items={education} icon={GraduationCap} title="Education" />
+    </div>
+  </div>
+</section>
   );
 }

@@ -3,12 +3,10 @@ import { ArrowRight, Code2, Sparkles } from "lucide-react";
 import { SectionHeader } from "../SectionHeader.jsx";
 import sideimg from "@/assets/sidee.png";
 
-
-
 export function AboutPreview() {
   return (
     <section className="relative py-15 lg:py-15 ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="relative ">
           <div className="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl " />
             <img src={sideimg} alt="Fazal Karim" className="w-full h-full object-cover grayscale" />

@@ -13,39 +13,46 @@ const services = [
 export function Services() {
   return (
 
-    <section className="relative  lg:py-15"> 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <SectionHeader
-          eyebrow="Services"
-          title="What I can build"
-          highlight="for you."
-          description="Specialized services tailored for startups, founders, and agile product teams."
-        />
+   <section className="relative lg:py-15">
+  <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-12 2xl:px-20">
+    <SectionHeader
+      eyebrow="Services"
+      title="What I can build"
+      highlight="for you."
+      description="Specialized services tailored for startups, founders, and agile product teams."
+    />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((s) => {
-            const Icon = s.icon;
-            return (
-              <div
-                key={s.title}
-                className="group relative p-7 rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/40 transition-all"
-              >
-                <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="relative">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all" />
-                  </div>
-                  <h3 className="text-lg font-medium mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">{s.desc}</p>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {services.map((s) => {
+        const Icon = s.icon;
+
+        return (
+          <div
+            key={s.title}
+            className="group relative p-7 rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/40 transition-all"
+          >
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+
+            <div className="relative">
+              <div className="flex items-start justify-between mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
+
+                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all" />
               </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
+
+              <h3 className="text-lg font-medium mb-2">{s.title}</h3>
+
+              <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                {s.desc}
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
   );
 }

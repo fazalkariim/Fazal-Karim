@@ -30,7 +30,7 @@ export default function Projects() {
 
       {/* Featured */}
       <section className="">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-20">
           <div className="relative rounded-3xl border border-border bg-card overflow-hidden grid lg:grid-cols-2 gap-0">
             <div className={`relative h-[230px] sm:aspect-video lg:aspect-auto bg-gradient-to-br ${featured.accent}`}>
               <div className="absolute inset-0 bg-grid opacity-30" />
@@ -77,7 +77,7 @@ export default function Projects() {
 
       {/* Filter + grid */}
       <section className="py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-11 2xl:px-20">
           <div className="flex flex-wrap gap-2 mb-10 justify-center">
             {categories.map((c) => (
               <button

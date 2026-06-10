@@ -174,31 +174,31 @@ export function Skills() {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <SectionHeader
-          eyebrow="Tech Stack"
-          title="Tools I use to build"
-          highlight="production-grade products."
-          description="A curated stack chosen for performance, maintainability, and speed of delivery."
-        />
+      <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-12 2xl:px-20">
+  <SectionHeader
+    eyebrow="Tech Stack"
+    title="Tools I use to build"
+    highlight="production-grade products."
+    description="A curated stack chosen for performance, maintainability, and speed of delivery."
+  />
 
-        <div className="relative overflow-hidden space-y-4">
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-background to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-background to-transparent" />
+  <div className="relative overflow-hidden space-y-4">
+    <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-background to-transparent" />
+    <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-background to-transparent" />
 
-          <div className="skills-marquee flex w-max gap-4">
-            {movingSkills1.map((skill, index) => (
-              <SkillCard key={`row-1-${skill.name}-${index}`} skill={skill} />
-            ))}
-          </div>
+    <div className="skills-marquee flex w-max gap-4">
+      {movingSkills1.map((skill, index) => (
+        <SkillCard key={`row-1-${skill.name}-${index}`} skill={skill} />
+      ))}
+    </div>
 
-          <div className="skills-marquee-reverse flex w-max gap-4">
-            {movingSkills2.map((skill, index) => (
-              <SkillCard key={`row-2-${skill.name}-${index}`} skill={skill} />
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className="skills-marquee-reverse flex w-max gap-4">
+      {movingSkills2.map((skill, index) => (
+        <SkillCard key={`row-2-${skill.name}-${index}`} skill={skill} />
+      ))}
+    </div>
+  </div>
+</div>
     </section>
   );
 }
