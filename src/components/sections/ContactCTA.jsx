@@ -30,18 +30,13 @@ export function ContactCTA() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href="#contact"
-                onClick={() => {
-                  setTimeout(() => {
-                    window.dispatchEvent(new Event("contact-highlight"));
-                  }, 300);
-                }}
+              <Link
+                to="/hire"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all"
               >
                 <Mail className="w-4 h-4" />
                 Contact Me
-              </a>
+              </Link>
 
               <Link
                 to="/hire"

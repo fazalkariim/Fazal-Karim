@@ -76,7 +76,7 @@ export function Footer() {
 
       <div className="  absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,119,255,0.12),transparent_45%)] pointer-events-none" />
 
-     <div className="relative w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-13 2xl:px-20 py-8">
+      <div className="relative w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-13 2xl:px-20 py-8">
         <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr] ">
           <div>
             <Link to="/" className="inline-flex items-center gap-1 group">
@@ -89,8 +89,8 @@ export function Footer() {
             </Link>
 
             <p className="mt-1 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-              MERN Stack Developer crafting modern, <br /> scalable and  clean web
-              applications for <br /> brands,  startups and businesses.
+              Designing and developing scalable digital <br /> products with the
+              MERN stack.
             </p>
           </div>
 
@@ -100,13 +100,6 @@ export function Footer() {
             </h4>
 
             <div className="flex flex-col gap-3 text-sm font-light">
-              <Link
-                to="/"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                Home
-              </Link>
-
               <Link
                 to="/about"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -122,20 +115,22 @@ export function Footer() {
               </Link>
 
               <a
-                href="#contact"
-                onClick={() => {
-                  setTimeout(() => {
-                    window.dispatchEvent(new Event("contact-highlight"));
-                  }, 300);
-                }}
+                href="/#skills"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Contact
+                Skills
+              </a>
+
+              <a
+                href="/#experience"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Experience
               </a>
             </div>
           </div>
 
-          <div >
+          <div>
             <h4 className=" mb-3 text-sm font-medium uppercase tracking-[0.25em] text-white">
               Connect
             </h4>
@@ -148,7 +143,9 @@ export function Footer() {
                 className="group inline-flex items-center gap-2 transition-all duration-300"
               >
                 <Github className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className={`transition-all duration-300 ${socialTextClass}`}>
+                <span
+                  className={`transition-all duration-300 ${socialTextClass}`}
+                >
                   Github
                 </span>
                 <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -161,7 +158,9 @@ export function Footer() {
                 className="group inline-flex items-center gap-2 transition-all duration-300"
               >
                 <Linkedin className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className={`transition-all duration-300 ${socialTextClass}`}>
+                <span
+                  className={`transition-all duration-300 ${socialTextClass}`}
+                >
                   LinkedIn
                 </span>
                 <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -174,7 +173,9 @@ export function Footer() {
                 className="group inline-flex items-center gap-2 transition-all duration-300"
               >
                 <Instagram className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className={`transition-all duration-300 ${socialTextClass}`}>
+                <span
+                  className={`transition-all duration-300 ${socialTextClass}`}
+                >
                   Instagram
                 </span>
                 <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -187,7 +188,9 @@ export function Footer() {
                 className="group inline-flex items-center gap-2 transition-all duration-300"
               >
                 <Facebook className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className={`transition-all duration-300 ${socialTextClass}`}>
+                <span
+                  className={`transition-all duration-300 ${socialTextClass}`}
+                >
                   Facebook
                 </span>
                 <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />

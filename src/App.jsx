@@ -7,6 +7,7 @@ import Projects from "./pages/Projects.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Hire from "./pages/Hire.jsx";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/hire" element={<Hire />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

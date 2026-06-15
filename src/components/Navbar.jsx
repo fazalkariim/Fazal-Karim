@@ -91,13 +91,12 @@ export function Navbar() {
             Experience
           </a>
 
-          <a
-            href="#contact"
-            onClick={handleContactClick}
+          <Link
+            to="/hire"
             className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:shadow-glow transition-all"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -144,7 +143,7 @@ export function Navbar() {
           </a>
 
           <a
-            href="#contact"
+            href="/hire"
             onClick={handleContactClick}
             className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium text-center"
           >

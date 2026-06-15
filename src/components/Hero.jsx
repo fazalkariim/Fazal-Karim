@@ -1,8 +1,6 @@
 import fk from "@/assets/fk.png";
 import logoo from "@/assets/logo.png";
 import fazal from "@/assets/fkk.png";
-
-
 import img7 from "@/assets/7.png";
 import img8 from "@/assets/8.png";
 import img9 from "@/assets/9.png";
@@ -69,7 +67,7 @@ export function Hero() {
             <img
               src={logoo}
               alt="logo"
-              className="w-44 h-44 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60 object-contain ml-20 xl:mb-70 xl:ml-40 2xl:ml-36 -mt-4 xl:-mt-6"
+              className="w-44 h-44 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60 object-contain ml-20 xl:mb-70 xl:ml-48 2xl:ml-36 -mt-4 xl:-mt-6"
             />
 
             <div className="absolute left-28 xl:mt-11 xl:left-64 2xl:left-67 top-36 xl:top-44 2xl:top-52 z-50">
