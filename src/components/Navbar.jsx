@@ -35,13 +35,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleContactClick = () => {
-    setOpen(false);
-
-    setTimeout(() => {
-      window.dispatchEvent(new Event("contact-highlight"));
-    }, 300);
-  };
 
   return (
     <header
@@ -142,13 +135,13 @@ export function Navbar() {
             Experience
           </a>
 
-          <a
-            href="/hire"
-            onClick={handleContactClick}
+          <Link
+            to="/hire"
+            onClick={() => setOpen(false)}
             className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium text-center"
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </header>
