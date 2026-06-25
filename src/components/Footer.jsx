@@ -199,7 +199,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t  pt-6 flex justify-center md:flex-row items-center gap-4 ">
+        <div className="mt-8 border-t pt-6 flex justify-center items-center">
           <p className="text-xs text-muted-foreground">
             © 2026 Fazal Karim. All Rights Reserved.
           </p>
