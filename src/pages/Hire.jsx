@@ -150,7 +150,7 @@ export default function Hire() {
               <button
                 disabled={loading}
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-all hover:scale-[1.02] hover:shadow-glow disabled:opacity-60"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-all hover:scale-[1.02] hover:shadow-glow disabled:opacity-60"
               >
                 <Send className="w-4 h-4" />
                 {loading ? "Sending Request..." : "Send Project Inquiry"}

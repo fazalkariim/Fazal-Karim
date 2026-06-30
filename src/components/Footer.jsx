@@ -7,7 +7,7 @@ import {
   Instagram,
   Facebook,
 } from "lucide-react";
-import logoo from "@/assets/logo.png";
+import logoo from "@/assets/brand.png";
 
 export function Footer() {
   const [activeGradient, setActiveGradient] = useState(false);

@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoo from "@/assets/logo.png";
+import brand from "@/assets/brand.png";
 
 const links = [
   { to: "/about", label: "About" },
@@ -199,7 +199,7 @@ export function Navbar() {
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-1 group animate-fadeInDown">
             <img
-              src={logoo}
+              src={brand}
               alt="logo"
               className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
             />

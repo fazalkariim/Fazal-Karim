@@ -1,5 +1,5 @@
 import fk from "@/assets/fk.png";
-import logoo from "@/assets/logo.png";
+import logoo from "@/assets/brand.png";
 import fazal from "@/assets/fkk.png";
 import img7 from "@/assets/7.png";
 import img8 from "@/assets/8.png";
