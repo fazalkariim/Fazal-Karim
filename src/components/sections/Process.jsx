@@ -1,30 +1,30 @@
 import React, { useRef, useEffect, useState } from "react";
 import { SectionHeader } from "../SectionHeader.jsx";
-import { ClipboardList, PenTool, Code, TestTube2, Rocket } from "lucide-react";
+import { Target, Frame, Code2, ShieldCheck, Send } from "lucide-react";
 
 const steps = [
   {
-    icon: ClipboardList,
+    icon: Target,
     title: "Scope",
     desc: "Define goals, constraints, and what ships in version one.",
   },
   {
-    icon: PenTool,
+    icon: Frame,
     title: "Design",
     desc: "Wireframes first, then interfaces built on your brand system.",
   },
   {
-    icon: Code,
+    icon: Code2,
     title: "Build",
     desc: "Clean architecture, readable code, and weekly progress you can see.",
   },
   {
-    icon: TestTube2,
+    icon: ShieldCheck,
     title: "Test",
     desc: "QA passes, integration checks, and edge cases covered before launch.",
   },
   {
-    icon: Rocket,
+    icon: Send,
     title: "Ship",
     desc: "CI/CD, monitoring, and documented handover to your team.",
   },
@@ -146,7 +146,7 @@ export function Process() {
 
           <div className="relative">
             <div
-              className={`hidden lg:block absolute left-0 right-0 top-8 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent ${
+              className={`hidden lg:block absolute left-0 right-0 top-[52px] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent ${
                 isVisible ? "scroll-slide-down" : ""
               }`}
             />
@@ -162,25 +162,17 @@ export function Process() {
                     className={`relative step-container ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}
                   >
                     <div
-                      className={`relative z-10 w-16 h-16 mx-auto bg-background border border-primary/40 grid place-items-center shadow-glow step-icon ${
-                        isVisible ? `scroll-scale-in ${delayClass}` : ""
-                      }`}
+                      className={`relative z-10 text-center ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}
                     >
-                      <Icon className="w-7 h-7 text-primary" />
-                    </div>
-
-                    <div
-                      className={`text-center mt-5 ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}
-                    >
-                      <div className="font-mono text-[11px] tracking-[0.2em] text-muted-foreground mb-1">
-                        [0{i + 1}]
+                      <div className="inline-block bg-background px-4 font-mono text-4xl font-bold tracking-tight text-primary">
+                        0{i + 1}
                       </div>
 
-                      <h3 className="text-lg font-bold uppercase tracking-tight mb-2">
+                      <h3 className="text-lg font-bold uppercase tracking-tight mt-4 mb-2">
                         {s.title}
                       </h3>
 
-                      <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                      <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-[220px] mx-auto">
                         {s.desc}
                       </p>
                     </div>
