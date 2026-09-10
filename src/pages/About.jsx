@@ -10,12 +10,12 @@ const strengths = [
   {
     icon: Zap,
     title: "Fast Execution",
-    desc: "Ship working software in days, not months.",
+    desc: "Working software in weeks, with progress you can see.",
   },
   {
     icon: Heart,
     title: "Product Mindset",
-    desc: "I care about your users as much as your code.",
+    desc: "I ask why a feature matters before I build it.",
   },
   {
     icon: CheckCircle2,
@@ -25,15 +25,15 @@ const strengths = [
   {
     icon: Users,
     title: "Team Player",
-    desc: "Comfortable in async, remote, and hybrid teams.",
+    desc: "Async-friendly across time zones, remote or hybrid.",
   },
 ];
 
 const stats = [
   { n: "7+", l: "Projects shipped", icon: Award },
-  { n: "3+", l: "Happy clients", icon: Users },
+  { n: "3+", l: "Clients served", icon: Users },
   { n: "1.5+", l: "Years experience", icon: Zap },
-  { n: "∞", l: "Cups of coffee", icon: Coffee },
+  { n: "100%", l: "On-time delivery", icon: Coffee },
 ];
 
 export default function About() {
@@ -43,7 +43,7 @@ export default function About() {
         eyebrow="About Me"
         title="The developer behind"
         highlight="the code."
-        description="A short story about who I am, how I work, and why I love building for the web."
+        description="Who I am, how I work, and what you get when you hire me."
       />
 
       <section className=" lg:py-3">
@@ -62,28 +62,27 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-extralight tracking-tight mb-6">
               Building{" "}
               <span className="text-primary font-light">
-                modern digital products
+                production-ready web apps
               </span>{" "}
-              that blend performance, scalability, and great user experiences.
+              that stay fast as they grow.
             </h2>
 
             <div className="space-y-3 text-muted-foreground font-light leading-relaxed">
               <p>
-                I'm a Full Stack Developer specializing in MERN Stack
-                applications, focused on transforming ideas into fast, scalable,
-                and production-ready solutions.
+                I'm a full-stack developer working with React, Next.js, Node,
+                and MongoDB. I take projects from first requirement to live
+                deployment.
               </p>
 
               <p>
-                From intuitive user interfaces to robust backend architectures,
-                I build applications that are designed to perform, scale, and
-                deliver real business value.
+                Frontend to backend, I handle both sides — which means fewer
+                handoffs, faster iteration, and one person accountable for the
+                whole thing.
               </p>
 
               <p>
-                Beyond coding, I'm constantly exploring new technologies,
-                refining development workflows, and staying current with modern
-                web engineering practices.
+                Outside client work, I'm usually testing a new tool, tightening
+                my workflow, or rebuilding something to understand it properly.
               </p>
             </div>
           </div>
@@ -121,8 +120,8 @@ export default function About() {
       <section className="pb-13 lg:py-3 lg:mb-10">
         <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-15 2xl:px-20">
           <div className="max-w-2xl mb-14 text-center mx-auto">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
-              <span className="w-1 h-1 rounded-full bg-primary" /> Why Me
+            <div className="inline-flex items-center gap-2 px-3 py-1 border border-border bg-surface/50 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              <span className="text-primary">//</span> Why Me
             </div>
             <h2 className="text-3xl md:text-5xl font-extralight tracking-tight">
               Why work <span className="text-primary font-light">with me.</span>

@@ -3,11 +3,31 @@ import { SectionHeader } from "../SectionHeader.jsx";
 import { ClipboardList, PenTool, Code, TestTube2, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: ClipboardList, title: "Planning", desc: "Define goals, scope, and the smallest valuable thing to ship first." },
-  { icon: PenTool, title: "UI Design", desc: "Wireframes and polished interfaces grounded in your brand language." },
-  { icon: Code, title: "Development", desc: "Clean, typed code with sensible architecture and a fast feedback loop." },
-  { icon: TestTube2, title: "Testing", desc: "Manual QA, integration checks, and edge-case coverage before launch." },
-  { icon: Rocket, title: "Deployment", desc: "CI/CD pipelines, monitoring, and a smooth handover to your team." },
+  {
+    icon: ClipboardList,
+    title: "Scope",
+    desc: "Define goals, constraints, and what ships in version one.",
+  },
+  {
+    icon: PenTool,
+    title: "Design",
+    desc: "Wireframes first, then interfaces built on your brand system.",
+  },
+  {
+    icon: Code,
+    title: "Build",
+    desc: "Clean architecture, readable code, and weekly progress you can see.",
+  },
+  {
+    icon: TestTube2,
+    title: "Test",
+    desc: "QA passes, integration checks, and edge cases covered before launch.",
+  },
+  {
+    icon: Rocket,
+    title: "Ship",
+    desc: "CI/CD, monitoring, and documented handover to your team.",
+  },
 ];
 
 export function Process() {
@@ -25,7 +45,7 @@ export function Process() {
       {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     if (sectionRef.current) {
@@ -109,7 +129,7 @@ export function Process() {
         }
 
         .step-container:hover .step-icon {
-          box-shadow: 0 20px 40px rgba(0, 119, 255, 0.3);
+                    box-shadow: 0 20px 40px rgba(255, 214, 0, 0.25);
           transform: scale(1.08);
         }
       `}</style>
@@ -119,15 +139,17 @@ export function Process() {
           <div className={isVisible ? "scroll-fade-up" : ""}>
             <SectionHeader
               eyebrow="How I Work"
-              title="A clear process,"
-              highlight="from idea to launch."
+              title="Five steps,"
+              highlight="idea to launch."
             />
           </div>
 
           <div className="relative">
-            <div className={`hidden lg:block absolute left-0 right-0 top-8 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent ${
-              isVisible ? "scroll-slide-down" : ""
-            }`} />
+            <div
+              className={`hidden lg:block absolute left-0 right-0 top-8 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent ${
+                isVisible ? "scroll-slide-down" : ""
+              }`}
+            />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
               {steps.map((s, i) => {
@@ -139,18 +161,24 @@ export function Process() {
                     key={s.title}
                     className={`relative step-container ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}
                   >
-                    <div className={`relative z-10 w-16 h-16 mx-auto rounded-2xl bg-background border border-primary/40 grid place-items-center shadow-glow step-icon ${
-                      isVisible ? `scroll-scale-in ${delayClass}` : ""
-                    }`}>
+                    <div
+                      className={`relative z-10 w-16 h-16 mx-auto bg-background border border-primary/40 grid place-items-center shadow-glow step-icon ${
+                        isVisible ? `scroll-scale-in ${delayClass}` : ""
+                      }`}
+                    >
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
 
-                    <div className={`text-center mt-5 ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}>
-                      <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-1">
-                        Step 0{i + 1}
+                    <div
+                      className={`text-center mt-5 ${isVisible ? `scroll-fade-up ${delayClass}` : ""}`}
+                    >
+                      <div className="font-mono text-[11px] tracking-[0.2em] text-muted-foreground mb-1">
+                        [0{i + 1}]
                       </div>
 
-                      <h3 className="text-lg font-medium mb-2">{s.title}</h3>
+                      <h3 className="text-lg font-bold uppercase tracking-tight mb-2">
+                        {s.title}
+                      </h3>
 
                       <p className="text-sm text-muted-foreground font-light leading-relaxed">
                         {s.desc}

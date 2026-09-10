@@ -29,7 +29,7 @@ export default function Hire() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
 
-      setStatus("Message sent successfully. I’ll get back to you soon.");
+      setStatus("Message sent. I’ll get back to you within 24 hours.");
       form.current.reset();
     } catch (error) {
       console.log(error);
@@ -45,21 +45,19 @@ export default function Hire() {
 
       <div className="relative w-full max-w-[1280px] mx-auto px-6 lg:px-12">
         <div className="mb-7 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-primary">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            Available for freelance projects
+          <div className="mb-4 inline-flex items-center gap-2 border border-primary/30 bg-primary/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+            <span className="text-primary">//</span>
+            Currently taking projects
           </div>
 
           <h1 className="text-3xl font-extralight tracking-tight text-white md:text-[42px]">
-            Let’s Build Something{" "}
-            <span className="text-gradient-primary font-light">
-              Exceptional
-            </span>
+            Have something{" "}
+            <span className="text-gradient-primary font-light">to build?</span>
           </h1>
 
           <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Share your project details and I’ll respond with the next steps as
-            soon as possible.
+            Send over your project details and I’ll reply within 24 hours with
+            next steps.
           </p>
         </div>
 
@@ -109,7 +107,9 @@ export default function Hire() {
                     <option value="" disabled>
                       Select Project Type
                     </option>
-                    <option value="MERN Web App">MERN Web App</option>
+                    <option value="Full Stack Web App">
+                      Full Stack Web App
+                    </option>
                     <option value="SaaS Platform">SaaS Platform</option>
                     <option value="Admin Dashboard">Admin Dashboard</option>
                     <option value="E-Commerce Website">
@@ -150,7 +150,7 @@ export default function Hire() {
               <button
                 disabled={loading}
                 type="submit"
-                className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-all hover:scale-[1.02] hover:shadow-glow disabled:opacity-60"
+                className="btn-primary disabled:opacity-60"
               >
                 <Send className="w-4 h-4" />
                 {loading ? "Sending Request..." : "Send Project Inquiry"}

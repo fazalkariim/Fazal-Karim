@@ -8,8 +8,8 @@ export function SectionHeader({
   const a = align === "center" ? "text-center mx-auto" : "text-left";
   return (
     <div className={`max-w-2xl mb-9 ${a}`}>
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
-        <span className="w-1 h-1 rounded-full bg-primary" />
+      <div className="inline-flex items-center gap-2 px-3 py-1 border border-border bg-surface/50 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                <span className="text-primary">//</span>
         {eyebrow}
       </div>
       <h2 className="text-3xl md:text-5xl font-extralight tracking-tight leading-tight">

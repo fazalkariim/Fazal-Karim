@@ -23,24 +23,26 @@ export default function Projects() {
     <>
       <PageHeader
         eyebrow="Featured Projects"
-        title="Solutions that"
-        highlight="deliver results."
-        description="From business websites to full-stack applications, each project is designed to solve real-world problems and create value."
+        title="Work that"
+        highlight="shipped."
+        description="Full-stack applications built for real use — each one solving a specific problem end to end."
       />
 
       {/* Featured */}
       <section className="">
         <div className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-20">
           <div className="relative rounded-3xl border border-border bg-card overflow-hidden grid lg:grid-cols-2 gap-0">
-            <div className={`relative h-[230px] sm:aspect-video lg:aspect-auto bg-gradient-to-br ${featured.accent}`}>
+            <div
+              className={`relative h-[230px] sm:aspect-video lg:aspect-auto bg-gradient-to-br ${featured.accent}`}
+            >
               <div className="absolute inset-0 bg-grid opacity-30" />
 
               {featured.image ? (
-             <img
-              src={featured.image}
-              alt={featured.title}
-              className="relative z-10 h-full w-full object-contain p-2 md:mt-11 sm:p-0 sm:ml-5"
-            />
+                <img
+                  src={featured.image}
+                  alt={featured.title}
+                  className="relative z-10 h-full w-full object-contain p-2 md:mt-11 sm:p-0 sm:ml-5"
+                />
               ) : (
                 <div className="absolute inset-0 grid place-items-center">
                   <span className="text-6xl font-extralight text-foreground/40 tracking-tight">
@@ -51,7 +53,7 @@ export default function Projects() {
             </div>
 
             <div className="p-10 lg:p-14 flex flex-col justify-center">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/40 bg-primary/10 text-[11px] uppercase tracking-[0.2em] text-primary mb-5 w-fit">
+              <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/40 bg-primary/10 font-mono text-[11px] uppercase tracking-[0.2em] text-primary mb-5 w-fit">
                 <Sparkles className="w-3 h-3" /> Featured Project
               </div>
               <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
@@ -64,7 +66,7 @@ export default function Projects() {
                 {featured.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-surface border border-border text-muted-foreground"
+                    className="font-mono text-[10px] uppercase tracking-widest px-2.5 py-1 bg-surface border border-border text-muted-foreground"
                   >
                     {t}
                   </span>
@@ -83,7 +85,7 @@ export default function Projects() {
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`px-4 py-2 rounded-full text-xs uppercase tracking-widest border transition-all ${
+                className={`px-4 py-2 font-mono text-xs uppercase tracking-widest border transition-all ${
                   active === c
                     ? "bg-primary text-primary-foreground border-primary shadow-glow"
                     : "bg-surface/50 text-muted-foreground border-border hover:border-primary/40 hover:text-foreground"

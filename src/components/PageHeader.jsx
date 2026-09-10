@@ -5,9 +5,9 @@ export function PageHeader({ eyebrow, title, highlight, description }) {
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-primary/15 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-6 lg:px-10 text-center">
-        {eyebrow && (
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-surface/50 text-xs uppercase tracking-widest text-muted-foreground mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+        {eyebrow && ( 
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-border bg-surface/50 font-mono text-xs uppercase tracking-widest text-muted-foreground mb-6">
+                       <span className="text-primary">//</span>
             {eyebrow}
           </div>
         )}

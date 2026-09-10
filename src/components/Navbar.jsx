@@ -201,7 +201,8 @@ export function Navbar() {
             <img
               src={brand}
               alt="logo"
-              className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
+              style={{ filter: "hue-rotate(-42deg) saturate(1.5)" }}
+className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
             />
 
             <span className="text-xl font-light tracking-tight text-white">
@@ -251,8 +252,7 @@ export function Navbar() {
 
             <Link
               to="/hire"
-              className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium nav-link-stagger animate-scaleIn nav-button-hover hover:shadow-glow transition-all duration-300"
-            >
+              className="btn-primary btn-sm nav-link-stagger animate-scaleIn nav-button-hover">
               Contact
             </Link>
           </div>
@@ -306,8 +306,7 @@ export function Navbar() {
             <Link
               to="/hire"
               onClick={() => setOpen(false)}
-              className="px-5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium text-center mobile-link-stagger animate-slideInUp hover:shadow-glow transition-all"
-            >
+              className="btn-primary btn-sm mobile-link-stagger animate-slideInUp">
               Contact
             </Link>
           </div>

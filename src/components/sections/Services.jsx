@@ -1,14 +1,48 @@
 import React, { useRef, useEffect, useState } from "react";
 import { SectionHeader } from "../SectionHeader.jsx";
-import { Code2, LayoutDashboard, Network, ShieldCheck, Smartphone, Layers, ArrowUpRight } from "lucide-react";
+import {
+  Code2,
+  LayoutDashboard,
+  Network,
+  ShieldCheck,
+  Smartphone,
+  Layers,
+  ArrowUpRight,
+} from "lucide-react";
 
 const services = [
-  { icon: Code2, title: "Full Stack Web Development", desc: "End-to-end web apps built with the MERN stack — from data layer to polished UI." },
-  { icon: LayoutDashboard, title: "Dashboard Development", desc: "Custom admin panels and analytics dashboards designed for clarity and speed." },
-  { icon: Network, title: "REST API Development", desc: "Robust, well-documented APIs that scale with your product and team." },
-  { icon: ShieldCheck, title: "Authentication & Security", desc: "JWT, OAuth, role-based access — login flows your users can trust." },
-  { icon: Smartphone, title: "Responsive UI/UX", desc: "Pixel-perfect interfaces that look sharp on every screen and device." },
-  { icon: Layers, title: "MERN Application Development", desc: "Production-ready Mongo, Express, React, Node apps shipped on time." },
+  {
+    icon: Code2,
+    title: "Full Stack Web Development",
+    desc: "End-to-end web apps — database, API, and interface built as one system.",
+    variant: "solid",
+  },
+  {
+    icon: LayoutDashboard,
+    title: "Dashboard Development",
+    desc: "Custom admin panels and analytics dashboards designed for clarity and speed.",
+  },
+  {
+    icon: Network,
+    title: "REST API Development",
+    desc: "Robust, well-documented APIs that scale with your product and team.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Authentication & Security",
+    desc: "JWT, OAuth, role-based access — login flows your users can trust.",
+  },
+  {
+    icon: Smartphone,
+    title: "Responsive UI/UX",
+    desc: "Pixel-perfect interfaces that look sharp on every screen and device.",
+    variant: "outline",
+  },
+  {
+    icon: Layers,
+    title: "Deployment & DevOps",
+    desc: "CI/CD pipelines, hosting setup, and monitoring so releases stay boring.",
+  },
 ];
 
 export function Services() {
@@ -26,7 +60,7 @@ export function Services() {
       {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     if (sectionRef.current) {
@@ -85,9 +119,34 @@ export function Services() {
         .service-card {
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .service-card:hover {
+                 .service-card:hover {
           transform: translateY(-4px);
+        }
+
+        .service-solid {
+          background: var(--primary);
+          border-color: var(--primary);
+          color: var(--primary-foreground);
+        }
+
+        .service-solid .service-desc,
+        .service-solid .service-num,
+        .service-solid .service-arrow {
+          color: var(--primary-foreground);
+          opacity: .75;
+        }
+
+        .service-solid .service-icon-box {
+          background: rgba(0,0,0,.12);
+          border-color: rgba(0,0,0,.2);
+        }
+
+        .service-solid .service-icon {
+          color: var(--primary-foreground);
+        }
+
+        .service-outline {
+          border-color: var(--primary);
         }
       `}</style>
 
@@ -98,7 +157,7 @@ export function Services() {
               eyebrow="Services"
               title="What I can build"
               highlight="for you."
-              description="Specialized services tailored for startups, founders, and agile product teams."
+              description="What I take on for startups, founders, and product teams."
             />
           </div>
 
@@ -110,24 +169,32 @@ export function Services() {
               return (
                 <div
                   key={s.title}
-                  className={`group relative p-7 rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/40 transition-all service-card ${
+                  className={`group relative p-7 border border-border bg-card overflow-hidden hover:border-primary/40 transition-all service-card ${
+                    s.variant === "solid" ? "service-solid" : ""
+                  } ${s.variant === "outline" ? "service-outline" : ""} ${
                     isVisible ? `scroll-scale-in ${delayClass}` : ""
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="relative">
-                    <div className="flex items-start justify-between mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center">
-                        <Icon className="w-6 h-6 text-primary" />
-                      </div>
-
-                      <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all" />
+                    <div className="service-num font-mono text-[11px] tracking-[0.2em] text-muted-foreground mb-5">
+                      [{String(index + 1).padStart(2, "0")}]
                     </div>
 
-                    <h3 className="text-lg font-medium mb-2">{s.title}</h3>
+                    <div className="flex items-start justify-between mb-6">
+                      <div className="service-icon-box w-12 h-12 bg-primary/10 border border-primary/20 grid place-items-center">
+                        <Icon className="service-icon w-6 h-6 text-primary" />
+                      </div>
 
-                    <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                      <ArrowUpRight className="service-arrow w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all" />
+                    </div>
+
+                    <h3 className="text-lg font-bold uppercase tracking-tight mb-2">
+                      {s.title}
+                    </h3>
+
+                    <p className="service-desc text-sm text-muted-foreground font-light leading-relaxed">
                       {s.desc}
                     </p>
                   </div>

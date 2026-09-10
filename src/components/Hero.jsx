@@ -22,32 +22,32 @@ export function Hero() {
           50% { transform: translateY(-8px); }
         }
 
-        @keyframes mobileGlow {
+               @keyframes mobileGlow {
           0%, 100% { opacity: 0.45; transform: scale(1); }
           50% { opacity: 0.9; transform: scale(1.08); }
         }
+
+        
       `}</style>
 
       <div className="relative w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 lg:min-h-[calc(100dvh-72px)] lg:flex lg:flex-col">
         {/* MOBILE HERO */}
         <div className="relative lg:hidden">
           <div className="relative z-10 flex flex-col items-center text-center mt-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 backdrop-blur-md">
+            <div className="mb-4 inline-flex items-center gap-2 border border-white/10 bg-white/[0.04] px-4 py-2 backdrop-blur-md">
               <span
-                className="h-2 w-2 rounded-full bg-primary shadow-[0_0_18px_rgba(0,119,255,0.9)]"
+                className="h-2 w-2 bg-primary shadow-[0_0_18px_rgba(255,214,0,0.9)]"
                 style={{ animation: "mobileGlow 2s ease-in-out infinite" }}
               />
 
-              <span className="text-[10px] uppercase tracking-[0.24em] text-primary">
-                MERN Stack Developer
+              <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
+                // FULL-STACK DEVELOPER
               </span>
             </div>
 
             <h1 className="max-w-[390px] text-[26px] font-light leading-[1.08] tracking-tight text-white sm:text-[44px] z-30">
-              Building modern web apps that feel{" "}
-              <span className="text-primary">Fast,</span>{" "}
-              <span className="text-primary">Clean</span> &{" "}
-              <span className="text-primary">Premium.</span>
+              <span className="text-primary">Building web products</span> that
+              ship fast and scale further
             </h1>
 
             <div className="relative -mt-2 w-[360px] sm:w-[360px]">
@@ -61,12 +61,13 @@ export function Hero() {
         </div>
 
         {/* DESKTOP HERO */}
-        <div className="hidden lg:grid flex-1 items-center gap-4 lg:grid-cols-[380px_560px_380px] xl:grid-cols-[430px_650px_430px] 2xl:grid-cols-[480px_760px_480px] justify-center pt-4 xl:pt-6">
+        <div className="relative hidden lg:grid flex-1 items-center gap-4 lg:grid-cols-[380px_560px_380px] xl:grid-cols-[430px_650px_430px] 2xl:grid-cols-[480px_760px_480px] justify-center pt-4 xl:pt-6">
           {/* LEFT SIDE */}
           <div className="relative translate-y-1 xl:translate-y-2">
             <img
               src={logoo}
               alt="logo"
+              style={{ filter: "hue-rotate(-42deg) saturate(1.5)" }}
               className="w-44 h-44 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60 object-contain ml-20 xl:mb-70 xl:ml-48 2xl:ml-36 -mt-4 xl:-mt-6"
             />
 
@@ -93,10 +94,11 @@ export function Hero() {
           <div className="relative translate-y-1 xl:translate-y-2 xl:right-20 ">
             <div className="max-w-[420px] xl:max-w-[520px] text-left">
               <p className="text-[35px] xl:text-[33px] 2xl:text-[37px] font-thin leading-[1.3] tracking-tight">
-                <span className="text-primary">Designing & developing</span>{" "}
+                <span className="text-primary">Building web products</span>{" "}
                 <span className="text-white">
-                  modern web solutions <br />
-                  that drive growth
+                  <br /> that ship fast and
+                  <br />
+                  scale further
                 </span>
               </p>
             </div>
@@ -104,6 +106,7 @@ export function Hero() {
             <img
               src={logoo}
               alt="logo"
+              style={{ filter: "hue-rotate(-42deg) saturate(1.5)" }}
               className="w-44 h-44 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60 object-contain ml-14 xl:ml-32 2xl:ml-32 mt-12 rotate-180"
             />
           </div>

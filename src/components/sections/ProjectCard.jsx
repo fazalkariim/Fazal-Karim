@@ -2,7 +2,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 export const projectsData = [
   {
-    title: "Flavora ",
+    title: "Flavora",
     description:
       "AI-powered recipe platform delivering personalized meal ideas and smart pantry-based cooking recommendations.",
     tech: ["Next", "Tailwind", "Strapi", "Shadcn-UI", "Gemini API"],
@@ -14,7 +14,7 @@ export const projectsData = [
   {
     title: "Bookifyr",
     description:
-      "MERN-powered ticketing platform featuring secure reservations, role-based workflows, and event administration.",
+      "Event ticketing platform with secure reservations, role-based access, and an admin panel for organizers.",
     tech: ["React", "Node", "Express", "Stripe", "Tailwind", "JWT"],
     category: "MERN Apps",
     status: "Completed",
@@ -73,7 +73,7 @@ export function ProjectCard({ p }) {
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-medium mb-3 group-hover:text-primary transition-colors">
+        <h3 className="text-xl font-bold uppercase tracking-tight mb-3 group-hover:text-primary transition-colors">
           {p.title}
         </h3>
 
@@ -85,7 +85,7 @@ export function ProjectCard({ p }) {
           {p.tech.map((t) => (
             <span
               key={t}
-              className="text-[10px] uppercase tracking-widest px-2 py-1 rounded-full bg-surface border border-border text-muted-foreground"
+              className="font-mono text-[10px] uppercase tracking-widest px-2 py-1 bg-surface border border-border text-muted-foreground"
             >
               {t}
             </span>
@@ -107,10 +107,10 @@ export function ProjectCard({ p }) {
 
           {p.status && (
             <span
-              className={`px-2 py-1 text-[10px] uppercase tracking-widest rounded-full backdrop-blur border ${
+              className={`px-2 py-1 font-mono text-[10px] uppercase tracking-widest backdrop-blur border ${
                 p.status === "Completed"
                   ? "bg-primary/10 border-primary/40 text-primary"
-                  : "bg-amber-500/10 border-amber-500/40 text-amber-400"
+                  : "bg-surface border-border text-muted-foreground"
               }`}
             >
               {p.status}

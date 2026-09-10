@@ -4,24 +4,24 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experience = [
   {
-    role: "Full Stack MERN Developer",
+    role: "Full Stack Developer",
     org: "Freelance",
     period: "2026 — Present",
-    desc: "Building scalable MERN applications and modern business platforms.",
+    desc: "Building web applications and business platforms for clients end to end.",
   },
 
   {
-    role: "MERN Stack Developer",
+    role: "Full-Stack Developer",
     org: "Galactecho",
     period: "2025 — 2026",
-    desc: "Developed dashboards, APIs, and authentication systems for SaaS products.",
+    desc: "Built dashboards, REST APIs, and authentication systems for SaaS products.",
   },
 
   {
     role: "Frontend Developer",
     org: "Galactecho",
     period: "2024 — 2025",
-    desc: "Created responsive React and Tailwind interfaces for global clients.",
+    desc: "Shipped responsive React and Tailwind interfaces for international clients.",
   },
 ];
 
@@ -43,14 +43,14 @@ const education = [
 
 function Timeline({ items, icon: Icon, title, isVisible }) {
   return (
-    <div
-      className={isVisible ? "scroll-fade-in-stagger" : ""}
-    >
-      <div className={`flex items-center gap-3 mb-8 ${isVisible ? "scroll-fade-up timeline-header" : ""}`}>
-        <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 grid place-items-center">
+    <div className={isVisible ? "scroll-fade-in-stagger" : ""}>
+      <div
+        className={`flex items-center gap-3 mb-8 ${isVisible ? "scroll-fade-up timeline-header" : ""}`}
+      >
+        <div className="w-10 h-10 bg-primary/10 border border-primary/30 grid place-items-center">
           <Icon className="w-5 h-5 text-primary" />
         </div>
-        <h3 className="text-xl font-medium">{title}</h3>
+        <h3 className="text-xl font-bold uppercase tracking-tight">{title}</h3>
       </div>
       <div className="relative pl-6 border-l border-border space-y-8">
         {items.map((item, idx) => (
@@ -61,10 +61,12 @@ function Timeline({ items, icon: Icon, title, isVisible }) {
               animationDelay: isVisible ? `${0.15 + idx * 0.15}s` : "0s",
             }}
           >
-            <div className={`absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-primary shadow-glow transition-all duration-500 ${
-              isVisible ? "timeline-dot" : ""
-            }`} />
-            <div className="text-[11px] uppercase tracking-[0.2em] text-primary mb-1">
+            <div
+              className={`absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-primary shadow-glow transition-all duration-500 ${
+                isVisible ? "timeline-dot" : ""
+              }`}
+            />
+            <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary mb-1">
               {item.period}
             </div>
             <h4 className="font-medium">{item.role}</h4>
@@ -94,7 +96,7 @@ export function Experience() {
       {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     if (sectionRef.current) {
@@ -136,11 +138,11 @@ export function Experience() {
         @keyframes dotPulse {
           0%, 100% {
             transform: scale(1);
-            box-shadow: 0 0 0 0 rgba(0, 119, 255, 0.4);
+                       box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.4);
           }
           50% {
             transform: scale(1.2);
-            box-shadow: 0 0 0 6px rgba(0, 119, 255, 0.2);
+            box-shadow: 0 0 0 6px rgba(255, 214, 0, 0.2);
           }
         }
 

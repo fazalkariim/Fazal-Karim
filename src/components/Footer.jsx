@@ -60,10 +60,10 @@ export function Footer() {
         .animated-social-gradient {
           background: linear-gradient(
             90deg,
-            #ffffff,
-            #0077ff,
-            #8abfff,
-            #0077ff,
+                       #ffffff,
+            #FFD600,
+            #FFF0B3,
+            #FFD600,
             #ffffff
           );
           background-size: 300% 300%;
@@ -74,7 +74,7 @@ export function Footer() {
         }
       `}</style>
 
-      <div className="  absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,119,255,0.12),transparent_45%)] pointer-events-none" />
+      <div className="  absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,214,0,0.10),transparent_45%)] pointer-events-none" />
 
       <div className="relative w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-13 2xl:px-20 py-8">
         <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr_1fr] ">
@@ -89,14 +89,14 @@ export function Footer() {
             </Link>
 
             <p className="mt-1 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-              Designing and developing scalable digital <br /> products with the
-              MERN stack.
+              Full-stack web development with React, <br /> Next.js, Node, and
+              MongoDB.
             </p>
           </div>
 
           <div>
-            <h4 className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-white">
-              Navigation
+            <h4 className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.25em] text-white">
+              // Navigation
             </h4>
 
             <div className="flex flex-col gap-3 text-sm font-light">
@@ -131,8 +131,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className=" mb-3 text-sm font-medium uppercase tracking-[0.25em] text-white">
-              Connect
+            <h4 className=" mb-3 font-mono text-xs font-bold uppercase tracking-[0.25em] text-white">
+              // Connect
             </h4>
 
             <div className="flex flex-col gap-3 text-sm font-light">
@@ -200,8 +200,8 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t pt-6 flex justify-center items-center">
-          <p className="text-xs text-muted-foreground">
-            © 2026 Fazal Karim. All Rights Reserved.
+          <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+            © 2026 Fazal Karim — All rights reserved
           </p>
         </div>
       </div>

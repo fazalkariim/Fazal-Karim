@@ -2,7 +2,17 @@
 @import "tw-animate-css";
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Archivo", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+  --radius-4xl: 0;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -33,7 +43,7 @@
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0;
 
   /* MAIN BACKGROUND */
   --background: #060807;
@@ -47,10 +57,10 @@
   --card-foreground: #f7fff0;
 
   /* PRIMARY (NEW GREEN) */
-  --primary: #B4FF4D;
-  --primary-foreground: #081103;
+  --primary: #ffd600;
+  --primary-foreground: #0a0a00;
 
-  --primary-glow: #D7FF99;
+  --primary-glow: #ffe666;
 
   /* SECONDARY */
   --secondary: #151b12;
@@ -61,40 +71,35 @@
   --muted-foreground: #9baa93;
 
   /* ACCENT */
-  --accent: #9EF03C;
-  --accent-foreground: #081103;
+  --accent: #ffc400;
+  --accent-foreground: #0a0a00;
 
   /* UI */
   --border: #20281a;
   --input: #161d12;
-  --ring: #B4FF4D;
+  --ring: #ffd600;
 
   /* GRADIENTS */
-  --gradient-primary:
-    linear-gradient(
-      135deg,
-      #B4FF4D 0%,
-      #D4FF90 50%,
-      #8CE623 100%
-    );
+  --gradient-primary: linear-gradient(
+    135deg,
+    #ffd600 0%,
+    #ffe873 50%,
+    #e6a800 100%
+  );
 
-  --gradient-text:
-    linear-gradient(
-      135deg,
-      #ffffff 10%,
-      #DFFFBA 45%,
-      #B4FF4D 100%
-    );
+  --gradient-text: linear-gradient(
+    135deg,
+    #ffffff 10%,
+    #fff0b3 45%,
+    #ffd600 100%
+  );
 
   /* SHADOWS */
-  --shadow-glow:
-    0 0 80px rgba(180,255,77,.28);
+  --shadow-glow: 0 0 80px rgba(255, 214, 0, 0.28);
 
-  --shadow-card:
-    0 16px 50px rgba(0,0,0,.55);
+  --shadow-card: 0 16px 50px rgba(0, 0, 0, 0.55);
 
-  --shadow-elevated:
-    0 24px 70px rgba(180,255,77,.18);
+  --shadow-elevated: 0 24px 70px rgba(255, 214, 0, 0.18);
 }
 
 @layer base {
@@ -106,6 +111,17 @@
     scroll-behavior: smooth;
   }
 
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  select,
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -115,13 +131,64 @@
     -webkit-font-smoothing: antialiased;
   }
 
-::selection {
-  background-color: rgba(180,255,77,.35);
-  color: #000;
-}
+  ::selection {
+    background-color: rgba(255, 214, 0, 0.35);
+    color: #000;
+  }
 }
 
 @layer utilities {
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    border-radius: 0;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border: 1px solid var(--primary);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--primary);
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    border-radius: 0;
+    background: transparent;
+    color: var(--foreground);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .btn-sm {
+    padding: 0.55rem 1.25rem;
+    font-size: 0.7rem;
+  }
 
   .text-gradient {
     background: var(--gradient-text);
@@ -174,13 +241,12 @@
 
     padding: 1px;
 
-  background:
-linear-gradient(
-135deg,
-rgba(180,255,77,.55),
-transparent 50%,
-rgba(180,255,77,.25)
-);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 214, 0, 0.55),
+      transparent 50%,
+      rgba(255, 214, 0, 0.25)
+    );
 
     -webkit-mask:
       linear-gradient(#000 0 0) content-box,
@@ -195,37 +261,25 @@ rgba(180,255,77,.25)
 
   .bg-grid {
     background-image:
-      linear-gradient(
-        to right,
-        rgba(180,255,77,.06) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        to bottom,
-        rgba(180,255,77,.06) 1px,
-        transparent 1px
-      );
+      linear-gradient(to right, rgba(255, 214, 0, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 214, 0, 0.06) 1px, transparent 1px);
 
     background-size: 60px 60px;
   }
 
   .glass {
-    background:
-      rgba(10,10,10,.65);
+    background: rgba(10, 10, 10, 0.65);
 
-    backdrop-filter:
-      blur(16px);
+    backdrop-filter: blur(16px);
 
-    -webkit-backdrop-filter:
-      blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 
-    border:
-      1px solid rgba(180,255,77,.08);
+    border: 1px solid rgba(255, 214, 0, 0.08);
   }
 
   @keyframes float {
-
-    0%,100% {
+    0%,
+    100% {
       transform: translateY(0);
     }
 
@@ -235,12 +289,10 @@ rgba(180,255,77,.25)
   }
 
   .animate-float {
-    animation:
-      float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
   }
 
   @keyframes fade-up {
-
     from {
       opacity: 0;
       transform: translateY(20px);
@@ -253,7 +305,6 @@ rgba(180,255,77,.25)
   }
 
   .animate-fade-up {
-    animation:
-      fade-up .6s ease-out both;
+    animation: fade-up 0.6s ease-out both;
   }
 }

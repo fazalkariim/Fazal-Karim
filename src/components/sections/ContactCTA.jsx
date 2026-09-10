@@ -17,7 +17,7 @@ export function ContactCTA() {
       {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     if (sectionRef.current) {
@@ -97,13 +97,6 @@ export function ContactCTA() {
           transform: translateY(-3px);
         }
 
-        .cta-button.primary:hover {
-          box-shadow: 0 20px 40px rgba(0, 119, 255, 0.3);
-        }
-
-        .cta-button.secondary:hover {
-          background-color: rgba(0, 119, 255, 0.05);
-        }
       `}</style>
 
       <section ref={sectionRef} className="relative pb-13 lg:py-3 lg:pb-10">
@@ -116,12 +109,12 @@ export function ContactCTA() {
             <div className="relative">
               {/* BADGE */}
               <div
-                className={`inline-flex whitespace-nowrap items-center gap-2 px-3 py-1 rounded-full border border-primary/40 bg-primary/10 text-[11px] uppercase tracking-[0.2em] text-primary mb-6 ${
+                className={`inline-flex whitespace-nowrap items-center gap-2 px-3 py-1 border border-primary/40 bg-primary/10 font-mono text-[11px] uppercase tracking-[0.2em] text-primary mb-6 ${
                   isVisible ? "scroll-slide-down cta-badge" : ""
                 }`}
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                Available for projects
+                <span className="text-primary">//</span>
+                Currently taking projects
               </div>
 
               {/* HEADING */}
@@ -130,9 +123,9 @@ export function ContactCTA() {
                   isVisible ? "scroll-fade-up cta-heading" : ""
                 }`}
               >
-                Let's transform your vision{" "}
+                Have something{" "}
                 <span className="text-gradient-primary font-medium">
-                  into reality.
+                  to build?
                 </span>
               </h2>
 
@@ -142,9 +135,9 @@ export function ContactCTA() {
                   isVisible ? "scroll-fade-up cta-description" : ""
                 }`}
               >
-                Looking for a developer who can turn ideas into scalable digital
-                products? I'm available for freelance projects, startup
-                collaborations, and remote opportunities.
+                Available for freelance work, startup collaborations, and remote
+                roles. Send over the details and I'll get back to you with next
+                steps.
               </p>
 
               {/* BUTTONS */}
@@ -155,7 +148,7 @@ export function ContactCTA() {
               >
                 <Link
                   to="/hire"
-                  className={`inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all cta-button primary ${
+                  className={`btn-primary cta-button ${
                     isVisible ? "scroll-scale-in cta-button-1" : ""
                   }`}
                 >
@@ -165,7 +158,7 @@ export function ContactCTA() {
 
                 <Link
                   to="/hire"
-                  className={`inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-primary bg-surface font-medium hover:border-primary/50 transition-all cta-button secondary ${
+                  className={`btn-outline cta-button ${
                     isVisible ? "scroll-scale-in cta-button-2" : ""
                   }`}
                 >

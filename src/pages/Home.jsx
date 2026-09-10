@@ -10,7 +10,7 @@ import { ContactCTA } from "../components/sections/ContactCTA.jsx";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero /> 
       <AboutPreview />
       <Skills />
       <Services />
