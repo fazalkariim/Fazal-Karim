@@ -10,6 +10,7 @@ export const projectsData = [
     status: "Completed",
     image: "/aiassis.png",
     github: "https://github.com/fazalkariim/Smart-Recipe-Platform.ai",
+    live: "http://smart-recipe-platform-ai.vercel.app/",
   },
   {
     title: "Bookifyr",
@@ -25,15 +26,7 @@ export const projectsData = [
     title: "TynexaAi",
     description:
       "Modern AI customer support system with automated responses, user management, and chatbot integration.",
-    tech: [
-      "Node",
-      "Express",
-      "Express",
-      "Mongoose",
-      "MongoDB",
-      "Scalekit",
-      "JWT",
-    ],
+    tech: ["Node", "Express", "Mongoose", "MongoDB", "Scalekit", "JWT"],
     category: "MERN Apps",
     status: "Completed",
     image: "/chatbot.png",
@@ -48,6 +41,7 @@ export const projectsData = [
     status: "In Progress",
     image: "/res.png",
     github: "https://github.com/fazalkariim/Restaurant-POS",
+    local: true,
   },
   {
     title: "Yoga Wellness Tracker",
@@ -57,6 +51,16 @@ export const projectsData = [
     category: "NEXT Apps",
     status: "Completed",
     image: "/yoga.png",
+    github: "https://github.com/fazalkariim/final-year-project",
+  },
+  {
+    title: "Gilgit Getaways Trek & Tours",
+    description:
+      "Gilgit Getaways Trek & Tours is a modern travel booking platform for exploring trekking adventures, tour packages, and destinations across Northern Pakistan.",
+    tech: ["React", "Tailwind", "Node","Prisma","PostgreSql","Nodemailer"],
+    category: "NEXT Apps",
+    status: "Completed",
+    image: "/project4.JPG",
     github: "https://github.com/fazalkariim/final-year-project",
   },
 ];
@@ -103,6 +107,25 @@ export function ProjectCard({ p }) {
               <Github className="w-3.5 h-3.5" />
               Code
             </a>
+
+            {p.live && (
+              <a
+                href={p.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-primary hover:opacity-70 transition-opacity"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Live
+              </a>
+            )}
+
+            {p.local && (
+              <span className="inline-flex items-center gap-1.5 text-xs text-primary hover:opacity-70 transition-opacity">
+                
+                Locally deployed
+              </span>
+            )}
           </div>
 
           {p.status && (
