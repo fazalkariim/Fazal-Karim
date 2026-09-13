@@ -197,7 +197,11 @@ export function Navbar() {
       >
         <nav className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-12 py-4 flex items-center justify-between">
           {/* LOGO */}
-          <Link to="/" className="flex items-center gap-1 group animate-fadeInDown">
+                    <Link
+            to="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="flex items-center gap-1 group animate-fadeInDown"
+          >
             <img
               src={brand}
               alt="logo"
