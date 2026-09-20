@@ -30,7 +30,7 @@ const strengths = [
 ];
 
 const stats = [
-  { n: "7+", l: "Projects shipped", icon: Award },
+  { n: "9+", l: "Projects shipped", icon: Award },
   { n: "3+", l: "Clients served", icon: Users },
   { n: "1.5+", l: "Years experience", icon: Zap },
   { n: "100%", l: "On-time delivery", icon: Coffee },

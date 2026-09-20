@@ -197,7 +197,7 @@ export function Navbar() {
       >
         <nav className="w-full max-w-[1680px] mx-auto px-6 lg:px-12 xl:px-16 2xl:px-12 py-4 flex items-center justify-between">
           {/* LOGO */}
-                    <Link
+          <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-1 group animate-fadeInDown"
@@ -206,7 +206,7 @@ export function Navbar() {
               src={brand}
               alt="logo"
               style={{ filter: "hue-rotate(-42deg) saturate(1.5)" }}
-className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
+              className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
             />
 
             <span className="text-xl font-light tracking-tight text-white">
@@ -256,7 +256,8 @@ className="w-8 h-8 object-contain group-hover:scale-110 transition-transform dur
 
             <Link
               to="/hire"
-              className="btn-primary btn-sm nav-link-stagger animate-scaleIn nav-button-hover">
+              className="btn-primary btn-sm nav-link-stagger animate-scaleIn nav-button-hover"
+            >
               Contact
             </Link>
           </div>
@@ -310,7 +311,8 @@ className="w-8 h-8 object-contain group-hover:scale-110 transition-transform dur
             <Link
               to="/hire"
               onClick={() => setOpen(false)}
-              className="btn-primary btn-sm mobile-link-stagger animate-slideInUp">
+              className="btn-primary btn-sm mobile-link-stagger animate-slideInUp"
+            >
               Contact
             </Link>
           </div>

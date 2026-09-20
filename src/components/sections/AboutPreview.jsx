@@ -54,7 +54,7 @@ export function AboutPreview() {
 
           <div className="mt-6 grid grid-cols-3 border-y border-border divide-x divide-border">
             {[
-              { n: "7+", l: "Projects" },
+              { n: "9+", l: "Projects" },
               { n: "3+", l: "Clients" },
               { n: "1.5yr+", l: "Experience" },
             ].map((s) => (
